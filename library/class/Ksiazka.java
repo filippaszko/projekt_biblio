@@ -1,58 +1,65 @@
 package library.class;
 
-public class Ksiazka {
-	  private Integer id;
+public class Ksiazka extends Autor, interface Genre {
+	  private int id;
 	  private String tytul;
-	  private Integer liczbaStron;
-	  private autor autor;
-	  private Integer rokWydania;
-	  private Gatunek gatunek;
+	  private int liczbaStron;
+	  private Autor autor;
+	  private int rokWydania;
+	  private Genre gatunek;
 
+	//przypisania
+	  public void setID(int ID) {
+	    this.ID = id;
+	  }
+	
+	  public void setTytul(String tytul) {
+	    this.tytul = tytul;
+	  }
+	
+	  public void setLStron(int liczbastr) {
+	     this.liczbastr = liczbaStron;
+	  }
+	
+	  public void setAutor(Autor autor) {
+	    this.autor = autor;
+	  }
+	
+	  public void setLiczbaStron(int liczbaStron) {
+	    this.liczbaStron = liczbaStron;
+	  }
+	
+	  public void setRokWydania(int rokWydania) {
+		this.rokWydania = rokWydania;
+	  }
+	
+	  public void setGatunek(Genre gatunek) {
+	    this.gatunek = gatunek;
+	  }
+	
+	//wywołania
 	  public String getTytul() {
 	    return tytul;
 	  }
 
-	  public void setTytul(String tytul) {
-	    this.tytul = tytul;
-	  }
-
-	  public Integer getLiczbaStron() {
+	  public int getLiczbaStron() {
 	    return liczbaStron;
 	  }
 
-	  public void setLiczbaStron(Integer liczbaStron) {
-	    this.liczbaStron = liczbaStron;
-	  }
-
-	  public autor getAutor() {
+	  public Autor getAutor() {
 	    return autor;
 	  }
 
-	  public void setAutor(autor autor) {
-	    this.autor = autor;
-	  }
-
-	  public Integer getRokWydania() {
+	  public int getRokWydania() {
 	    return rokWydania;
 	  }
 
-	  public void setRokWydania(Integer rokWydania) {
-		this.rokWydania = rokWydania;
-	  }
-
-	  public Gatunek getGatunek() {
+	  public Genre getGatunek() {
 	    return gatunek;
-	  }
-
-	  public void setGatunek(Gatunek gatunek) {
-	    this.gatunek = gatunek;
 	  }
 
 	  public Integer getId() {
 	    return id;
 	  }
 
-	  public void setId(Integer id) {
-	    this.id = id;
-	  }
 }
