@@ -8,6 +8,8 @@ public class main {
 		System.out.println("W naszej bibliotece możesz:");
 		
 		Biblioteka bib = new Biblioteka();
+		Ksiazka nowytytul = new Ksiazka();
+		Ksiazka liczbaStron = new Ksiazka();
 		
 		System.out.println(bib.getMenu());
 		System.out.println();
@@ -15,7 +17,9 @@ public class main {
 		switch(bib.setWybor()) {
 			case 1:
 				//coścoścoś
-				System.out.println("Wybrałeś dodanie książki do biblioteki.");
+				System.out.println("Wybrałeś dodanie książki do biblioteki.");   // wypisanie dodanych funkcji (do sprawdzenia / poprawienia)
+				System.out.println("Tytuł nowej ksiązki, którą dodałeś do biblioteki to : \n" + nowytytul.podajtytul());
+				System.out.println("Liczba stron książki, którą dodałeś do biblioteki wynosi : \n" + liczbaStron.podajLstron());
 				break;
 			case 2:
 				//coścoścoś
