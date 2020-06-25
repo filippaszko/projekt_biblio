@@ -18,16 +18,65 @@ public class main {
 			case 1:
 				//coścoścoś
 				System.out.println("Wybrałeś dodanie książki do biblioteki.");   // wypisanie dodanych funkcji (do sprawdzenia / poprawienia)
-				System.out.println("Tytuł nowej ksiązki, którą dodałeś do biblioteki to : \n" + nowytytul.podajtytul());
-				System.out.println("Liczba stron książki, którą dodałeś do biblioteki wynosi : \n" + liczbaStron.podajLstron());
+				System.out.println("Dodanie książki wymaga dodania, tytułu, roku wydania, liczby stron i gatunku.");
+				System.out.println("Podaj tytuł.");
+				Scanner in = new Scanner(System.in);
+				String tytul = in.nextLine();
+				//tytul=nowytytul.getTytul();
+				System.out.println("Podaj rok wydania.");
+				String rok = in.nextLine();
+				System.out.println("Podaj liczbę stron");
+				String liczbastron = in.nextLine();
+				System.out.println("Podaj gatunek");
+				String genre = in.nextLine();
+
+				System.out.println("Książka: "+"'"+tytul+"'"+" została pomyślnie dodana do katalogu.\n\n");
 				break;
 			case 2:
 				//coścoścoś
 				System.out.println("Wybrałeś dodanie autora do biblioteki.");
+				/*
+				Do usprawnienia opcja wyświetlania książek, wcześniej dodanych do biblioteki, tak aby po wyborze danej książki umożliwić dodanie jej 
+				nowego autora
+				
+				System.out.println("Dla której z poniższych książek chcesz dodać autora?\n");
+				//String  = in.nextLine();
+				Scanner inn = new Scanner(System.in);
+				ArrayList<String> someTytul = new ArrayList<String>();
+				someTytul.add(Ksiazka.getTytul());
+	
+				Iterator<String> listaksiazek = ((ArrayList<String>) someTytul).iterator();
+				while(listaksiazek.hasNext()) {
+				 System.out.println ((listaksiazek).next());
+				}
+				*/
+				String tytulautor = inn.nextLine();
+					
+				System.out.println("Podaj imię autora.");
+				String imie = inn.nextLine();
+				System.out.println("Podaj nazwisko autora.");
+				String nazwisko = inn.nextLine();
+				System.out.println("Nowy autor dla książki:" + tytulautor+ "to:" + imie + " " + nazwisko);
+				
 				break;
 			case 3:
 				//coś coś coś
 				System.out.println("Wybrałeś dodanie użytkownika do biblioteki.");
+				System.out.println("Podaj imię nowego użytkownika.\n");
+				Scanner scanUser = new Scanner(System.in);
+				String imieUser = scanUser.nextLine();
+				
+				System.out.println("Podaj nazwisko nowego użytkownika.\n");
+				String nazwiskoUser = scanUser.nextLine();
+				
+				System.out.println("Podaj pesel użytkownika.\n");
+				String pesel = scanUser.nextLine();
+				
+				System.out.println("Wpisz K - jeśli nowy użytkownik to Kobieta\n"
+						+ "Wpisz M - jesli nowy użytkownik to Mężczyzna");
+				String plec = scanUser.nextLine();
+				
+				System.out.println("Nowy użytkownik biblioteki to: " +imieUser+ " " + nazwiskoUser + " | " + pesel+ " | " +plec);
 				break;
 			case 4:
 				//coś coś coś
