@@ -14,6 +14,26 @@ public class Biblioteka {
 		return wybor;
 	}
 	
+	// Poniżej konstruktory dla klasy Kasizka. Trzeba to zastosować w mainie tak aby dodać tytuł , liczbe stron itp i żeby zwróciło liste książek
+	public Biblioteka() {
+	    this.ksiazki = new ArrayList<>();
+	    this.uzytkownicy = new ArrayList<>();
+	    this.rejestrWypozyczen = new ArrayList<>();
+	    
+	}
+	    
+	    public void dodajKsiazke(Ksiazka ksiazka){
+	        ksiazka.setId(idGenerator);
+	        idGenerator = idGenerator +1;
+	        this.ksiazki.add(ksiazka);
+			
+			
+	      }
+	  
+	    public List<Ksiazka> getKsiazki() {
+	        return ksiazki;
+	    }
+	
 	public static String getMenu() {
 		return menu;
 	}
