@@ -30,7 +30,7 @@ public class main {
 				System.out.println("Podaj gatunek");
 				String genre = in.nextLine();
 
-				System.out.println("Książka: "+"'"+tytul+"'"+" została pomyślnie dodana do katalogu.\n\n");
+				System.out.println("Książka: "+"'"+bib.getKsiazki()+"'"+" została pomyślnie dodana do katalogu.\n\n");
 				break;
 			case 2:
 				//coścoścoś
