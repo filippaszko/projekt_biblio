@@ -81,6 +81,29 @@ public class main {
 			case 4:
 				//coś coś coś
 				System.out.println("Wybrałeś dodanie gatunku książki do biblioteki.");
+				
+				//Do usprawnienia opcja wyświetlenia książek wcześniej dodanych, dla których można dodać nowy gatunek
+				
+				ArrayList<String> listaGenre = new ArrayList<String>();
+				// Poniższe elementy zostaną dodane do listy
+				listaGenre.add("1. Fantasy\n");
+				listaGenre.add("2. Dramat\n");
+				listaGenre.add("3. Sensacja\n");
+				listaGenre.add("4. Romans\n");
+				listaGenre.add("5. Kryminał\n");
+				listaGenre.add("6. Thriller\n");
+				listaGenre.add("7. Horror\n");
+				listaGenre.add("8. Dokumentalny\n");
+				listaGenre.add("9. Science fiction\n");
+				listaGenre.add("10. Komedia\n");
+				
+				System.out.println("Dostępne gatunki to: \n"+ listaGenre);
+				
+				System.out.println("Który gatunek książki chcesz dodać? \n");
+				Scanner scanGenre = new Scanner(System.in);
+				String Genre = scanGenre.nextLine();
+				
+				System.out.println("Nowy gatunek dla książki:   to: " + Genre);
 				break;
 			case 5: 
 				// coś coś coś
