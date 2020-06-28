@@ -10,6 +10,7 @@
    * Klasy Autor, Main
    * W głównej klasie Biblioteka rozbudowa opcji dodania nowego autora książki o konkretnym imieniu i nazwisko na podstawie klasy Autor.java. Następnie dodanie autora do listy rejestru. W opcji 2, utworzenie autora przez konstruktor domyślny. Dodanie do rejestru opcji wyświetlania ostatnio dodanych użytkowników.
    * Rozbduowa kalsy Main i utworzenie dla niej dokumenatcji.
+   * Testowanie roboczych i końcowych rozwiązań
 ### Damian Małolepszy
 #### Odpowiadał za zadania:
    * Dodanie klasy Książki, Gatunek
