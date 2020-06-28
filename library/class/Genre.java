@@ -5,6 +5,7 @@ public class Genre {
 
 	  public String getGatunek() {
 	    return gatunek;
+		  
 	  }
 
 	  public void setGatunek(String gatunek) {
