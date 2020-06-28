@@ -1,13 +1,10 @@
 package library.class;
 
-public class Genre {
-	  private String gatunek;
+import java.util.ArrayList;
+import java.util.List;
 
-	  public String getGatunek() {
-	    return gatunek;  
-	  }
-
-	  public void setGatunek(String gatunek) {
-	    this.gatunek = gatunek;
-    }
+public interface Genre {
+	
+  public String gat = "losowy gatunek";
+	
 }
