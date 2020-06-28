@@ -1,84 +1,43 @@
 package library.class;
 
-public class Ksiazka extends Autor{              // wydaje mi się że za "Autor" powinna być {, a później } po Genre, bez tego nie pójdzie
-interface Genre {
-}
-	  private int id;
-	  private String tytul;
-	  private int liczbaStron;
-	  private Autor autor;
-	  private int rokWydania;
-	  private Genre gatunek;
+/**
+w klasie Ksiazka celowo zrezygnowaliśmy z wykorzystania konstruktorów typu get i set. Obiekt typu Ksiazka może być utworzony jedynie w całości.
+**/
+import java.util.Scanner;
 
-	//przypisania
-	  public void setID(int ID) {
-	    this.ID = id;
-	  }
-	
-	  public void setTytul(String tytul) {
-	    this.tytul = tytul;
-	  }
-	/*
-	String podajtytul() {                // metoda wywołująca dodanie nowego tytułu ksiazki (do sprawdzenia / poprawienia)
-		  Scanner in = new Scanner(System.in);
-		  System.out.println("Podaj tytuł nowej ksiązki, którą chcesz dodać");
-		  String tytul = in.nextLine();
-		  return tytul;
-	  }
-	  */
-	
-	  public void setLStron(int liczbastr) {
-	     this.liczbastr = liczbaStron;
-	  }
-	/*
-	int podajLstron() {             // metoda wywołująca dodanie liczby stron do ksiązki (do sprawdzenia / poprawienia)
-		Scanner in = new Scanner(System.in);
-		System.out.println("Podaj liczbę stron nowej ksiązki, którą dodałeś");
-		String lStron = in.nextLine();
-		int liczbaStron = Integer.parseInt(lStron);
-		return liczbaStron;
-	 }
-	 */
-	
-	  public void setAutor(Autor autor) {
-	    this.autor = autor;
-	  }
-	
-	  public void setLiczbaStron(int liczbaStron) {
-	    this.liczbaStron = liczbaStron;
-	  }
-	
-	  public void setRokWydania(int rokWydania) {
-		this.rokWydania = rokWydania;
-	  }
-	
-	  public void setGatunek(Genre gatunek) {
-	    this.gatunek = gatunek;
-	  }
-	
-	//wywołania
-	  public String getTytul() {
-	    return tytul;
-	  }
+public class Ksiazka extends Autor {
+	  public int id = 0;
+	  public String tytul;
+	  public int liczbaStron;
+	  public int rokWydania;
+	  public String gatunek;
 
-	  public int getLiczbaStron() {
-	    return liczbaStron;
-	  }
+Scanner in = new Scanner(System.in);
 
-	  public Autor getAutor() {
-	    return autor;
-	  }
+//konstruktor
+  public Ksiazka(String tytul, String imie, String nazwisko, int rokWydania, int liczbaStron, String gatunek, int id){
+    this.tytul = tytul;
+    imie = imie;
+    nazwisko = nazwisko;
+    this.rokWydania = rokWydania;
+    this.liczbaStron = liczbaStron;
+    this.gatunek = gatunek;
+    id += 1;
+  }
 
-	  public int getRokWydania() {
-	    return rokWydania;
-	  }
+  public Ksiazka(){
+    tytul = "Przykładowy tytuł";
+    imie = "Paulo";
+    nazwisko = "Coelho";
+    rokWydania = 1984;
+    liczbaStron = 245;
+    gatunek = "proza";
+    id += 1;
+    }
 
-	  public Genre getGatunek() {
-	    return gatunek;
-	  }
+//weryfikacja, jakie książki znajdują się w rejestrze
+  public String toString(){
+    return "Tytuł: " + tytul + "\nAutor: " + imie + " " + nazwisko +"\nLiczba Stron: " + liczbaStron + "\nRok wydania: " + rokWydania + "\nGatunek: " + gatunek;
+    }
 
-	  public Integer getId() {
-	    return id;
-	  }
-
-}
+  }
