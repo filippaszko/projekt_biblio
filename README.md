@@ -1,6 +1,6 @@
 # Projekt Biblioteka
 
-### Projekt imitujący system obsługi biblioteki.
+### Projekt imitujący repozytorium biblioteczne.
 ### Biblioteka oparta na funkcji switch, dzięki czemu program umożliwia dodawanie książek, autorów, gatunków, a także użytkowników biblioteki – wypożyczających. Dodatkowo utworzona jest opcja rejestru, sprawdzająca informację dotyczące ostatnio dodanych użytkowników, książek, autorów oraz gatunków). 
 
 #### Klasy uwzględnione w programie:
